@@ -20,7 +20,7 @@ class SubtitlesDownloader():
     def __call_sub_db_api(self, hash):
         url = 'http://api.thesubdb.com/'
         payload = {'action': 'download', 'hash': hash, 'language': 'es'}
-        headers = {'user-agent': 'SubDB/1.0 (subs_downloader/0.1; http://github.com/hantaro88)'}
+        headers = {'user-agent': 'SubDB/1.0 (subDownoader/0.1; https://github.com/antar88/subDownoader)'}
         return requests.get(url, params=payload, headers=headers)
 
     def __get_hash(self):
